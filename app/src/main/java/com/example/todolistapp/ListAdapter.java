@@ -26,14 +26,14 @@ public class ListAdapter extends RecyclerView.Adapter {
 
     class VHList extends RecyclerView.ViewHolder {
 
-        private TextView tvId;
+ //       private TextView tvId;
         private TextView tvDo;
         private TextView tvTime;
         private ImageView ivAlarm;
 
         public VHList(View rowView) {
             super(rowView);
-            this.tvId = tvId;
+ //           this.tvId = tvId;
             this.tvDo = rowView.findViewById(R.id.tv_do);
             this.tvTime = rowView.findViewById(R.id.tv_time);
             this.ivAlarm = rowView.findViewById(R.id.iv_alarm);
@@ -53,7 +53,7 @@ public class ListAdapter extends RecyclerView.Adapter {
         VHList vh =(VHList) holder;
         myList l = this.doMyList.get(position);
 
-        vh.tvId.setText(l.id);
+//        vh.tvId.setText(l.id);
         vh.tvDo.setText(l.what);
         vh.tvTime.setText(l.time);
 
